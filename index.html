@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/image/favicon.ico">
+    <link rel="stylesheet" href="css.css">
+
+    <title>Mon petit cliqueur</title>
+</head>
+<body>
+    <main>
+        <div id="debug" class="debug"> </div>
+        <div class="userInfo">
+            <ul>
+                <li>Bonjour <span id="characterName"></span></li>
+                <li>Vous avez <span id="havePoint">0</span> points</li>
+                <li>Vous êtes au niveau <span id="currentLevel"></span></li>
+                <li><span id="upPoint"></span> points pour le niveau suivant</li>
+            </ul>
+            <button onclick="winPointHandle()">Gagner des points</button><span id="showWinPoint"></span>
+        </div>
+        
+        <div class="gameContent" id="gamesContentCavnas">
+            
+        </div>
+        <!--<canvas class="gameContent" id="gameContent">
+        <canvas class="gameContent2" id="gameContent">-->
+            
+        </canvas>
+        
+        <div class="userBar">
+            <div class="userMap"></div>
+            <div class="userSpell">
+                <ul class="spellBar">
+                    <li data-spell="1">1</li>
+                    <li data-spell="2">2</li>
+                    <li data-spell="3">3</li>
+                    <li data-spell="4">4</li>
+                    <li data-spell="5">5</li>
+                </ul>
+            </div>
+            <div class="userMenu"></div>
+        </div>
+    </main>
+    
+        
+    <script src="./js/Maps.js"></script>
+    <script src="./js/Graphics.js"></script>
+    <script src="./js/GameSettings.js"></script>
+    <script src="./js/GameObjects.js"></script>
+    <script src="./js/Sprites.js"></script>
+    <script src="./js/inputController.js"></script>
+    <script src="./js/LevelManager.js"></script>
+    <script src="./js/PlayerManager.js"></script>
+    <script src="./js/Main.js"></script>
+
+
+</body>
+</html>

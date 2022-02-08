@@ -1,0 +1,61 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.debug{
+    display : inline-block;
+    position: absolute;
+    width: 700px;
+    display : flex;
+    z-index: 200;
+    background: rgba(0 , 0, 0, 0.4);
+    color : white;
+}
+
+.gameContent{
+    display : flex;
+    height: auto;
+}
+
+
+.userInfo{
+    display : none;
+    flex-direction: column;
+    width: 300px;
+    position: absolute;
+    z-index: 1000;
+    background: rgba(0 , 0, 0, 0.4);
+    top : 3%;
+    left : 2%;
+    color : whitesmoke;
+}
+.userInfo ul{
+    list-style-type: none;
+}
+.userInfo button{
+    width: 70%;
+}
+
+.userBar{
+    display : none;
+    flex-direction: row;
+
+    border : 1px solid red;
+    position: absolute;
+    bottom : 0;
+    left : 40%;
+    transform: translate(-0%, -40%);
+    z-index: 90;
+}
+.userBar ul, .userBar ul li{
+    display: inline-block; 
+    list-style: none;
+    padding:0;
+}
+
+.userBar ul li{
+    background-color: blueviolet;
+    width: 75px;
+    height: 75px;
+}

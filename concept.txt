@@ -1,0 +1,39 @@
+1 : récupéré les informations du joueurs
+2 : Créer la map via l'id du joueur
+3 : spawn le joueur à la bonne position
+
+A terme récupérer la position du joeurs stocké et load l'id de la map avec la position
+
+TODO :
+    Engine :
+        - Adapter la zone de jeu par rapport à l'écran de l'utilisateur
+        - Réduire la hauteur de la fenêtre et créer un scroll pour descendre dans la zone
+
+
+    Player :
+        - Déplacement gérer le multi directionnel
+            - Bug quand on a 3 touches conséqutif, il faudra debug ça
+
+
+
+LevelManager
+ - Les tuiles de la map ( faire attention au layer pour bien gérer la transparence)
+ - Des colisions  ( le joueur peut ou ne peux pas se déplacer du cette case)
+ - Des points d'événement (il se trouve devant une caise et veut fouiller dedans)
+
+ - Des ennemies (qui peuvent bouger (animation))
+ - des points d'entrée et sortie de la map ( pour se déplacer sur d'autres maps)
+
+
+Commencer en 2D et évoluer avec l'histoire pour ajouter de la 2.5D et ensuite de la 3D
+
+
+Les personnages font 2 en hauteurs max (64 * 32)
+
+
+Tourner sur le gameplay de la boucle de 1 secondes qui donnes des Spés 
+Ne pas oublier que des gens vont laisser tourner leur navigateur all time (donc déséquillibrer le jeu) 
+-> contrer : par exemple a partir de 12 heures de jeux conséqutif, le nombre de récompense de points est diminiué progressivement toutes les 2h
+
+
+nodeJs - Socket.IO  - MangosDB -  Howler.js 
